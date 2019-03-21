@@ -40,9 +40,6 @@ module.exports = robot => {
       });
   });
 
-  robot.hear(/sad/i, function(res){
-    res.reply('Dont be sad');
-  });
 
   robot.respond(/get schedule/i, function (res) {
     robot.logger.debug('Fetching improv events...');
