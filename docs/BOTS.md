@@ -17,5 +17,5 @@ This is a demo bot for the workshop, so not really much to say.
 
 Supported commands for the bot:
 
-- improbot get schedule - List upcoming imporov events
-- improbot show <ID> - Get information about a show
+- `improbot get schedule` - List upcoming imporov events
+- `improbot show <ID>` - Get information about a show

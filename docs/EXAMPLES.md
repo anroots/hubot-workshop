@@ -40,8 +40,14 @@ robot.respond(/incident ongoing/i, function(res){
 ### Unsupported API-s
 
 If you want to do something that the [hubot-fleep][] adapter does not currently support, you'll need to either work
-around it (for example: the `.emote` method) is not currently supported, but you can achieve the same result by using
+around it (for example: the `.emote` method is not currently supported, but you can achieve the same result by using
 `.send('((cat))')`; or implement it yourself into `hubot-fleep`.
+
+
+### Security notes
+
+Be aware that by default  _anyone_ can issue commands to your bot. If your bot performs any data-changing or sensitive
+actions, you will want to add authorization logic at some point. 
 
 [hubot-fleep]: https://github.com/anroots/hubot-fleep
 [docs]: https://hubot.github.com/docs/scripting/
